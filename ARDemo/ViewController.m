@@ -96,6 +96,7 @@
         //    SCNScene *scene = [SCNScene sceneNamed:@"art.scnassets/ship/ship.scn"];
             SCNScene *scene = [SCNScene sceneNamed:@"art.scnassets/vase/vase.scn"];
             SCNNode *cubeNode = scene.rootNode.clone;
+//        SCNNode *cubeNode = [scene.rootNode childNodeWithName:@"vase" recursively:NO];
             cubeNode.position = SCNVector3Make(0, 0, -0.5);
 
             [node addChildNode:cubeNode];
